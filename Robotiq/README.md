@@ -1,3 +1,30 @@
+# Introduce
+This project uses serial communication.
+Therefore, in order to use this project, it is necessary to connect the gripper and the robot using a serial cable(USB2RS485).
+
+* The Skill command can be used up to 100 times.
+
+# Skill Command Usage
+## RQ_INIT
+ Basic serial communication parameters are fixed.
+ - parameter : slave id
+
+## RQ_GRASP
+ - parameter : position
+ - parameter : speed
+ - parameter : force
+ - (option)parameter : device id, this is not slave id, only 0 or 1.
+## RQ_RELEASE
+ - parameter : position
+ - parameter : speed
+ - parameter : force
+ - (option)parameter : device id, this is not slave id, only 0 or 1.
+## RQ_GET_STATUS
+Global variable(Global_statusReturn) registration required
+ - parameter : status, enter the status name you want to read.
+ - return : Global_statusReturn 
+
+
 # Robotiq Wiring Schematic
 <img src="./doc/Robotiq_Wiring_Schematic.png" width="50%" height="50%"/>
 
