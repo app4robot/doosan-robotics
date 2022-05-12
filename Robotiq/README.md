@@ -8,6 +8,7 @@ Therefore, in order to use this project, it is necessary to connect the gripper 
 ## RQ_INIT
  Basic serial communication parameters are fixed.
  - parameter : slave id
+ - parameter(radio button) : device type (controller, flange)
 
 ## RQ_GRASP
  - parameter : position
